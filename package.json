@@ -1,0 +1,11 @@
+{
+  "name": "imagi-toner-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Protótipo institucional da Imagi Toner.",
+  "scripts": {
+    "build": "node scripts/build-check.mjs",
+    "test": "node scripts/build-check.mjs",
+    "dev": "python -m http.server 4173"
+  }
+}

@@ -3,257 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#09253f" />
+    <meta name="theme-color" content="#0d1830" />
     <meta name="description" content="Soluções em impressão para empresas: venda, locação e assistência de impressoras com atendimento especializado." />
-    <meta property="og:title" content="MASI TONER | Impressão sem complicação" />
+    <meta property="og:title" content="Imagi Toner | Venda, Locação e Assistência de Impressoras" />
     <meta property="og:description" content="Venda, locação e assistência de impressoras para empresas que precisam imprimir sem perder tempo." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="public/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Imagi Toner | Venda, Locação e Assistência de Impressoras</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>MASI TONER | Venda, Locação e Assistência de Impressoras</title>
   </head>
   <body>
     <!--
-      THESIS: A MASI TONER transforma uma rotina que trava em uma operação que segue; a página recusa o hero SaaS previsível.
-      OWN-WORLD: Sala de impressão editorial: azul profundo, papel off-white, coral de marcação, regras finas e formas vetoriais de folhas/equipamentos.
-      STORY: O visitante entende venda, locação e assistência, reconhece uma abordagem próxima e solicita uma conversa.
-      FIRST VIEWPORT: Header compacto; headline oversized à esquerda; uma impressora vetorial e folhas em movimento à direita; CTAs no rodapé do bloco.
-      FORM: Composição editorial assimétrica, posição 1; seed key indisponível porque o pacote impeccable fornecido não inclui os scripts de seed.
+      THESIS: Oficina em movimento — transformar venda, locação e assistência em uma jornada editorial clara, não em um catálogo.
+      OWN-WORLD: Azul profundo, papel off-white, coral de ação; linhas técnicas, recortes de folhas e formas geométricas firmes.
+      STORY: A empresa entende a rotina, organiza a necessidade e conduz a pessoa até uma conversa de orçamento.
+      FIRST VIEWPORT: Header compacto; headline em escala grande à esquerda; estação de impressão geométrica coral à direita; CTA primário abaixo do texto.
+      FORM: Direção code-led, posição 1; seed key manual-code-led-01 (concept-seed unavailable in supplied skill package).
       FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
     -->
-    <div class="site-shell">
-      <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-      <header class="site-header" data-header>
-        <div class="container header-inner">
-          <a class="brand" href="#inicio" aria-label="MASI TONER, voltar ao início">
-            <img src="assets/logo.svg" alt="MASI TONER" width="152" height="34" />
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Imagi Toner, início — wordmark provisório">
+          <img class="brand-mark" src="public/assets/logo.svg" alt="" width="42" height="42" />
+          <span class="brand-lockup">
+            <span class="brand-name">IMAGI TONER</span>
             <span class="brand-note">wordmark provisório</span>
-          </a>
+          </span>
+        </a>
 
-          <nav class="desktop-nav" aria-label="Navegação principal">
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#solucoes">Soluções</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-          </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Abrir menu</span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
 
-          <a class="button button-small button-header" href="#contato">
-            Falar com um especialista
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg>
-          </a>
-
-          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
-            <span></span><span></span>
-          </button>
-        </div>
-
-        <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação mobile" data-mobile-menu>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Navegação principal">
           <a href="#inicio">Início</a>
           <a href="#servicos">Serviços</a>
           <a href="#solucoes">Soluções</a>
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
-          <a class="button button-coral" href="#contato">Falar com um especialista <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
         </nav>
-      </header>
 
-      <main>
-        <section class="hero" id="inicio" aria-labelledby="hero-title">
-          <div class="hero-accent hero-accent-one" aria-hidden="true"></div>
-          <div class="hero-accent hero-accent-two" aria-hidden="true"></div>
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <h1 id="hero-title">Impressão <em>sem</em> complicação.</h1>
-              <p class="hero-lead">Venda, locação e assistência de impressoras para empresas que precisam imprimir sem perder tempo.</p>
-              <div class="hero-actions">
-                <a class="button button-coral" href="#contato">Solicitar orçamento <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
-                <a class="text-link text-link-light" href="#solucoes">Conhecer soluções <svg class="icon-down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v11M4 9l4 4 4-4" /></svg></a>
+        <a class="button button-small button-coral header-cta" href="#contato">Falar com um especialista</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker"><span class="kicker-rule"></span> soluções em impressão</p>
+            <h1 id="hero-title">Impressão <span>sem</span> complicação<span class="title-dot">.</span></h1>
+            <p class="hero-lede">Venda, locação e assistência de impressoras para empresas que precisam imprimir sem perder tempo.</p>
+            <div class="hero-actions">
+              <a class="button button-coral" href="#contato">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+              <a class="text-link text-link-light" href="#solucoes">Conhecer soluções <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-proof" aria-label="Áreas de atuação">
+              <span>venda</span>
+              <span>locação</span>
+              <span>assistência</span>
+            </div>
+          </div>
+
+          <div class="hero-stage" role="img" aria-label="Ilustração conceitual de uma estação de impressão com folhas, impressora e cartucho de toner">
+            <div class="stage-stamp">IT / 01</div>
+            <div class="paper-sheet paper-sheet-back"><span>IMAGI<br />TONER</span></div>
+            <div class="paper-sheet paper-sheet-front">
+              <span class="paper-corner">A4 · 80 g</span>
+              <strong>trabalho<br />em fluxo</strong>
+              <span class="paper-line paper-line-one"></span>
+              <span class="paper-line paper-line-two"></span>
+              <span class="paper-line paper-line-three"></span>
+            </div>
+            <div class="printer-unit">
+              <div class="printer-topline">
+                <span>PRINT STATION</span>
+                <span class="status-light"><i></i> pronto</span>
               </div>
-              <div class="hero-note">
-                <span class="status-dot"></span>
-                <span>Para a rotina continuar funcionando.</span>
+              <div class="printer-slot"></div>
+              <div class="printer-console">
+                <div class="printer-display">A4<br /><b>01</b></div>
+                <div class="printer-controls"><i></i><i></i><i></i></div>
               </div>
+              <div class="printer-output"><span></span></div>
             </div>
-
-            <div class="hero-art" aria-label="Composição vetorial conceitual de uma impressora e folhas, criada para o protótipo" role="img">
-              <div class="hero-art-label">IMAGEM CONCEITUAL <span>／</span> PROTÓTIPO</div>
-              <div class="paper paper-back"></div>
-              <div class="paper paper-middle"><span>DOCUMENTO<br />PRONTO</span><small>01 / 04</small></div>
-              <div class="paper paper-front"><span>MASI<br /><strong>TONER</strong></span><small>IMPRESSÃO</small></div>
-              <div class="printer-shape">
-                <div class="printer-top"><span></span><span></span><span></span></div>
-                <div class="printer-screen"><i></i><i></i><i></i></div>
-                <div class="printer-body"><div class="printer-slot"></div><div class="printer-tray"></div></div>
-              </div>
-              <div class="hero-art-caption"><strong>01</strong><span>Equipamento certo.<br />Rotina leve.</span></div>
-              <div class="hero-line hero-line-one"></div>
-              <div class="hero-line hero-line-two"></div>
-            </div>
+            <div class="toner-tube"><span>TONER</span><b>BK</b></div>
+            <div class="stage-note stage-note-top">imprimir<br />é seguir</div>
+            <div class="stage-note stage-note-bottom">imagem conceitual<br />para apresentação</div>
+            <div class="stage-cross stage-cross-one" aria-hidden="true"></div>
+            <div class="stage-cross stage-cross-two" aria-hidden="true"></div>
           </div>
-          <div class="hero-bottom container" aria-hidden="true">
-            <span>Venda</span><i></i><span>Locação</span><i></i><span>Assistência</span>
-            <span class="hero-scroll">Deslize para descobrir <svg class="icon-down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v11M4 9l4 4 4-4" /></svg></span>
-          </div>
-        </section>
-
-        <section class="value-section section-light" aria-labelledby="value-title">
-          <div class="container value-grid">
-            <div class="value-statement" data-reveal="clip">
-              <h2 id="value-title">Uma gráfica que resolve o que você precisa.</h2>
-              <p>Da escolha do equipamento à manutenção, a MASI TONER ajuda empresas a manter sua operação funcionando.</p>
-            </div>
-            <div class="value-list" data-reveal="rise">
-              <div class="value-item"><span>01</span><strong>Venda de equipamentos</strong><small>Escolhas claras para a sua operação.</small></div>
-              <div class="value-item"><span>02</span><strong>Locação de impressoras</strong><small>Mais praticidade para o dia a dia.</small></div>
-              <div class="value-item"><span>03</span><strong>Assistência técnica</strong><small>Suporte quando você precisa.</small></div>
-              <div class="value-item"><span>04</span><strong>Soluções em impressão</strong><small>Recursos para imprimir melhor.</small></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="services-section section-paper" id="servicos" aria-labelledby="services-title">
-          <div class="container">
-            <div class="section-heading services-heading" data-reveal="rise">
-              <h2 id="services-title">Tudo para sua impressão <span>funcionar.</span></h2>
-              <p>Conteúdo provisório para apresentação. A seleção final de serviços será validada com a MASI TONER.</p>
-            </div>
-            <div class="services-list">
-              <a class="service-row service-row-coral" href="#contato" data-reveal="slide">
-                <span class="service-number">01</span>
-                <div class="service-title"><h3>Venda de<br /><em>impressoras</em></h3></div>
-                <p>Equipamentos para diferentes necessidades e volumes de impressão.</p>
-                <span class="service-mark" aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" /></svg></span>
-              </a>
-              <a class="service-row service-row-blue" href="#contato" data-reveal="slide">
-                <span class="service-number">02</span>
-                <div class="service-title"><h3>Locação de<br /><em>impressoras</em></h3></div>
-                <p>Mais praticidade para empresas que precisam de equipamentos e suporte.</p>
-                <span class="service-mark" aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" /></svg></span>
-              </a>
-              <a class="service-row service-row-sky" href="#contato" data-reveal="slide">
-                <span class="service-number">03</span>
-                <div class="service-title"><h3>Assistência<br /><em>técnica</em></h3></div>
-                <p>Manutenção e suporte para manter seus equipamentos funcionando.</p>
-                <span class="service-mark" aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" /></svg></span>
-              </a>
-              <a class="service-row service-row-ink" href="#contato" data-reveal="slide">
-                <span class="service-number">04</span>
-                <div class="service-title"><h3>Suprimentos<br /><em>e soluções</em></h3></div>
-                <p>Recursos para facilitar sua rotina de impressão.</p>
-                <span class="service-mark" aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 16 16"><path d="M3 13 13 3M5 3h8v8" /></svg></span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="differential-section" aria-labelledby="differential-title">
-          <div class="differential-orbit differential-orbit-one" aria-hidden="true"></div>
-          <div class="differential-orbit differential-orbit-two" aria-hidden="true"></div>
-          <div class="container differential-inner">
-            <div class="differential-top"><span>Quando a impressão para,</span><span class="differential-rule"></span><span>seu trabalho também para.</span></div>
-            <h2 id="differential-title">Seu equipamento<br /><em>não pode parar.</em></h2>
-            <div class="differential-bottom">
-              <p>Uma parceria prática para escolher, manter e resolver.</p>
-              <div class="differential-points">
-                <span>Atendimento próximo</span>
-                <span>Suporte técnico</span>
-                <span>Soluções sob medida</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="process-section section-light" aria-labelledby="process-title">
-          <div class="container">
-            <div class="section-heading process-heading" data-reveal="rise">
-              <h2 id="process-title">Do problema<br /><em>à solução.</em></h2>
-              <p>Um caminho direto para a sua rotina não ficar esperando.</p>
-            </div>
-            <div class="process-track" data-reveal="clip">
-              <div class="process-line" aria-hidden="true"><span></span></div>
-              <article class="process-step"><span class="process-index">01</span><span class="process-pin"></span><h3>Você entra<br />em contato</h3><p>Conte o que está acontecendo.</p></article>
-              <article class="process-step"><span class="process-index">02</span><span class="process-pin"></span><h3>Entendemos sua<br />necessidade</h3><p>O contexto vem primeiro.</p></article>
-              <article class="process-step"><span class="process-index">03</span><span class="process-pin"></span><h3>Indicamos a<br />melhor solução</h3><p>Sem complicar a escolha.</p></article>
-              <article class="process-step"><span class="process-index">04</span><span class="process-pin"></span><h3>Você volta<br />a imprimir</h3><p>Com mais tranquilidade.</p></article>
-            </div>
-          </div>
-        </section>
-
-        <section class="equipment-section section-paper" id="solucoes" aria-labelledby="equipment-title">
-          <div class="container">
-            <div class="equipment-intro" data-reveal="rise">
-              <div><h2 id="equipment-title">Equipamentos<br />para cada <em>necessidade.</em></h2></div>
-              <p>Uma estrutura pronta para receber o catálogo real da MASI TONER. Os visuais abaixo são imagens conceituais e não representam modelos ou marcas específicas.</p>
-            </div>
-            <div class="equipment-grid" data-equipment-list></div>
-            <div class="equipment-foot"><span>CATÁLOGO PROVISÓRIO</span><span>Substituir com materiais oficiais antes da publicação <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></div>
-          </div>
-        </section>
-
-        <section class="about-section section-light" id="sobre" aria-labelledby="about-title">
-          <div class="container about-grid">
-            <div class="about-art" data-reveal="scale" aria-label="Imagem vetorial conceitual de manutenção de impressão" role="img">
-              <div class="about-art-stamp">MASI<br /><span>TONER</span></div>
-              <div class="about-sheet about-sheet-one"></div><div class="about-sheet about-sheet-two"></div>
-              <div class="about-tool"><span></span><i></i><b></b></div>
-              <div class="about-screw about-screw-one"></div><div class="about-screw about-screw-two"></div>
-              <div class="about-art-note"><span>MANUTENÇÃO</span><strong>ATENÇÃO<br />AOS DETALHES</strong></div>
-            </div>
-            <div class="about-copy" data-reveal="rise">
-              <h2 id="about-title">Experiência que começa no <em>atendimento.</em></h2>
-              <p>Há uma coisa que não muda: entender o que o cliente realmente precisa. A MASI TONER atua com soluções em impressão, oferecendo equipamentos, locação e assistência para ajudar empresas a manter sua rotina funcionando.</p>
-              <p class="provisional-note"><span></span> Texto institucional provisório — validar com a empresa.</p>
-              <a class="text-link text-link-dark" href="#contato">Conversar sobre minha necessidade <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta-section" aria-labelledby="cta-title">
-          <div class="cta-corner cta-corner-one" aria-hidden="true"></div><div class="cta-corner cta-corner-two" aria-hidden="true"></div>
-          <div class="container cta-inner" data-reveal="clip">
-            <h2 id="cta-title">Precisa imprimir<br /><em>melhor?</em></h2>
-            <p>Converse com a MASI TONER e encontre a solução ideal para sua empresa.</p>
-            <div class="cta-actions"><a class="button button-coral" href="#contato">Solicitar orçamento <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a><a class="text-link text-link-light" href="https://wa.me/558130990465" target="_blank" rel="noopener">Falar pelo WhatsApp <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a></div>
-          </div>
-          <div class="cta-word" aria-hidden="true">IMPRIMIR</div>
-        </section>
-
-        <section class="contact-section section-paper" id="contato" aria-labelledby="contact-title">
-          <div class="container contact-grid">
-            <div class="contact-copy" data-reveal="rise">
-              <h2 id="contact-title">Vamos colocar sua rotina em <em>movimento.</em></h2>
-              <p>Explique brevemente o que você precisa. Este formulário é demonstrativo e não envia dados a um servidor neste protótipo.</p>
-              <div class="contact-phone"><span>Telefone provisório <small>confirmar antes da publicação</small></span><a href="tel:+558130990465">(81) 3099-0465</a></div>
-              <a class="contact-whatsapp" href="https://wa.me/558130990465" target="_blank" rel="noopener"><span>Falar pelo WhatsApp</span><svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a>
-            </div>
-            <form class="contact-form" data-contact-form novalidate>
-              <div class="form-row"><label for="name">Nome <span>*</span></label><input id="name" name="name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" aria-describedby="name-error" required /><small class="field-error" id="name-error" data-error-for="name"></small></div>
-              <div class="form-row"><label for="company">Empresa</label><input id="company" name="company" type="text" autocomplete="organization" placeholder="Nome da empresa" /></div>
-              <div class="form-split"><div class="form-row"><label for="phone">Telefone <span>*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" aria-describedby="phone-error" required /><small class="field-error" id="phone-error" data-error-for="phone"></small></div><div class="form-row"><label for="email">E-mail <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" aria-describedby="email-error" required /><small class="field-error" id="email-error" data-error-for="email"></small></div></div>
-              <div class="form-row"><label for="topic">Como podemos ajudar?</label><select id="topic" name="topic"><option value="">Selecione uma opção</option><option>Quero comprar uma impressora</option><option>Tenho interesse em locação</option><option>Preciso de assistência</option><option>Preciso de suprimentos</option><option>Outro</option></select></div>
-              <div class="form-row"><label for="message">Mensagem</label><textarea id="message" name="message" rows="3" placeholder="Conte um pouco sobre a sua necessidade"></textarea></div>
-              <button class="button button-ink form-submit" type="submit">Enviar solicitação <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></button>
-              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-top">
-          <a class="brand brand-footer" href="#inicio" aria-label="MASI TONER, voltar ao início"><img src="assets/logo.svg" alt="MASI TONER" width="152" height="34" /><span class="brand-note">wordmark provisório</span></a>
-          <div class="footer-nav"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#solucoes">Soluções</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
-          <div class="footer-contact"><span>Telefone provisório</span><a href="tel:+558130990465">(81) 3099-0465</a><a class="footer-whatsapp" href="https://wa.me/558130990465" target="_blank" rel="noopener">WhatsApp <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg></a></div>
         </div>
-        <div class="container footer-bottom"><span>© <span data-year></span> MASI TONER. Protótipo institucional.</span><span>Conteúdo e materiais sujeitos à confirmação.</span></div>
-      </footer>
-    </div>
+        <div class="hero-ticker" aria-label="Áreas de atuação">
+          <div class="ticker-track">
+            <span>venda de equipamentos</span><i></i><span>locação de impressoras</span><i></i><span>assistência técnica</span><i></i><span>soluções em impressão</span><i></i>
+            <span aria-hidden="true">venda de equipamentos</span><i aria-hidden="true"></i><span aria-hidden="true">locação de impressoras</span><i aria-hidden="true"></i><span aria-hidden="true">assistência técnica</span><i aria-hidden="true"></i><span aria-hidden="true">soluções em impressão</span><i aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-section section-pad" aria-labelledby="value-title">
+        <div class="container">
+          <div class="section-intro value-intro">
+            <h2 id="value-title">Uma empresa que resolve o que você precisa.</h2>
+            <div class="intro-aside">
+              <p>Da escolha do equipamento à manutenção, a Imagi Toner ajuda empresas a manter sua rotina de impressão funcionando.</p>
+              <span class="side-index">01 / 04</span>
+            </div>
+          </div>
+          <ul class="value-list" role="list">
+            <li class="value-row value-row-highlight" data-reveal="clip">
+              <span class="value-index">01</span>
+              <div class="value-title-wrap"><h3>Venda de equipamentos</h3><span class="value-arrow" aria-hidden="true">↗</span></div>
+              <p>Para encontrar uma configuração que acompanhe o seu volume de trabalho.</p>
+              <span class="value-chip">equipar</span>
+            </li>
+            <li class="value-row" data-reveal="rise">
+              <span class="value-index">02</span>
+              <div class="value-title-wrap"><h3>Locação de impressoras</h3><span class="value-arrow" aria-hidden="true">↗</span></div>
+              <p>Mais praticidade para empresas que precisam de equipamento e suporte.</p>
+              <span class="value-chip">simplificar</span>
+            </li>
+            <li class="value-row" data-reveal="rise">
+              <span class="value-index">03</span>
+              <div class="value-title-wrap"><h3>Assistência técnica</h3><span class="value-arrow" aria-hidden="true">↗</span></div>
+              <p>Manutenção e suporte para manter seus equipamentos funcionando.</p>
+              <span class="value-chip">cuidar</span>
+            </li>
+            <li class="value-row" data-reveal="slide">
+              <span class="value-index">04</span>
+              <div class="value-title-wrap"><h3>Soluções em impressão</h3><span class="value-arrow" aria-hidden="true">↗</span></div>
+              <p>Recursos pensados para facilitar cada etapa da sua rotina.</p>
+              <span class="value-chip">fluir</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="services-section section-pad" id="servicos" aria-labelledby="services-title">
+        <div class="container services-layout">
+          <div class="services-side" data-reveal="slide">
+            <p class="section-kicker">o que fazemos</p>
+            <h2 id="services-title">Tudo para sua impressão funcionar.</h2>
+            <div class="service-art" role="img" aria-label="Composição geométrica conceitual com uma folha impressa e uma faixa coral">
+              <span class="art-sheet"></span>
+              <span class="art-band">IMPRIMA<br />E SIGA</span>
+              <span class="art-pin"></span>
+              <span class="art-label">A / 04</span>
+            </div>
+          </div>
+          <div class="service-list">
+            <article class="service-item" data-reveal="rise">
+              <div class="service-num">01</div>
+              <div class="service-content"><h3>Venda de impressoras</h3><p>Equipamentos para diferentes necessidades e volumes de impressão.</p></div>
+              <div class="service-icon service-icon-printer" aria-hidden="true"><span></span><i></i></div>
+            </article>
+            <article class="service-item" data-reveal="rise">
+              <div class="service-num">02</div>
+              <div class="service-content"><h3>Locação de impressoras</h3><p>Mais praticidade para empresas que precisam de equipamentos e suporte.</p></div>
+              <div class="service-icon service-icon-loop" aria-hidden="true"><span></span><i></i></div>
+            </article>
+            <article class="service-item" data-reveal="rise">
+              <div class="service-num">03</div>
+              <div class="service-content"><h3>Assistência técnica</h3><p>Manutenção e suporte para manter seus equipamentos funcionando.</p></div>
+              <div class="service-icon service-icon-wrench" aria-hidden="true"><span></span><i></i></div>
+            </article>
+            <article class="service-item" data-reveal="rise">
+              <div class="service-num">04</div>
+              <div class="service-content"><h3>Suprimentos e soluções</h3><p>Recursos para facilitar sua rotina de impressão.</p></div>
+              <div class="service-icon service-icon-paper" aria-hidden="true"><span></span><i></i></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section" aria-labelledby="benefits-title">
+        <div class="benefits-graphic" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="container benefits-inner">
+          <div class="benefits-heading">
+            <p class="section-kicker section-kicker-light">quando importa</p>
+            <h2 id="benefits-title">Seu equipamento não pode parar<span class="title-dot">.</span></h2>
+          </div>
+          <div class="benefits-copy">
+            <p class="benefits-lede">Quando a impressão para, seu trabalho também para.</p>
+            <ul class="benefit-list" role="list">
+              <li><span>01</span><strong>Atendimento próximo</strong></li>
+              <li><span>02</span><strong>Suporte técnico</strong></li>
+              <li><span>03</span><strong>Soluções sob medida</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="benefit-footer container"><span>manter funcionando</span><span>é parte da solução</span></div>
+      </section>
+
+      <section class="process-section section-pad" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-intro process-intro">
+            <div><p class="section-kicker">como acontece</p><h2 id="process-title">Do problema à solução.</h2></div>
+            <p>Uma conversa objetiva para entender sua necessidade e tirar a impressão do caminho.</p>
+          </div>
+          <ol class="process-list">
+            <li class="process-step" data-reveal="rise"><div class="process-step-top"><span class="process-number">01</span><span class="process-node"></span></div><h3>Você entra em contato</h3><p>Conte o que está acontecendo na sua rotina.</p></li>
+            <li class="process-step" data-reveal="rise"><div class="process-step-top"><span class="process-number">02</span><span class="process-node"></span></div><h3>Entendemos sua necessidade</h3><p>O contexto vem antes da indicação.</p></li>
+            <li class="process-step" data-reveal="rise"><div class="process-step-top"><span class="process-number">03</span><span class="process-node"></span></div><h3>Indicamos a melhor solução</h3><p>Equipamento, locação ou suporte.</p></li>
+            <li class="process-step" data-reveal="rise"><div class="process-step-top"><span class="process-number">04</span><span class="process-node process-node-last"></span></div><h3>Você volta a imprimir</h3><p>Com mais clareza para seguir.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="solutions-section section-pad" id="solucoes" aria-labelledby="solutions-title">
+        <div class="container">
+          <div class="section-intro solutions-intro">
+            <div><p class="section-kicker">possibilidades</p><h2 id="solutions-title">Equipamentos para cada necessidade.</h2></div>
+            <p>Uma estrutura pronta para receber o catálogo real da Imagi Toner.</p>
+          </div>
+          <div class="equipment-grid">
+            <article class="equipment-item equipment-item-large" data-reveal="clip">
+              <div class="equipment-visual equipment-visual-mfp" role="img" aria-label="Placeholder visual de uma multifuncional empresarial">
+                <span class="equipment-label">placeholder / 01</span><div class="mfp-shape"><i></i><b></b><em></em></div><span class="visual-caption">MULTIFUNCIONAL</span>
+              </div>
+              <div class="equipment-info"><div><p class="equipment-type">categoria a confirmar</p><h3>Multifuncional empresarial</h3></div><a class="circle-link" href="#contato" aria-label="Falar sobre multifuncional empresarial">↗</a></div>
+            </article>
+            <article class="equipment-item equipment-item-small" data-reveal="rise">
+              <div class="equipment-visual equipment-visual-color" role="img" aria-label="Placeholder visual de uma impressora colorida"><span class="equipment-label">placeholder / 02</span><div class="color-printer-shape"><i></i><b></b></div><span class="visual-caption">COLOR</span></div>
+              <div class="equipment-info"><div><p class="equipment-type">categoria a confirmar</p><h3>Impressora colorida</h3></div><a class="circle-link" href="#contato" aria-label="Falar sobre impressora colorida">↗</a></div>
+            </article>
+            <article class="equipment-item equipment-item-small" data-reveal="rise">
+              <div class="equipment-visual equipment-visual-office" role="img" aria-label="Placeholder visual de uma estação de impressão"><span class="equipment-label">placeholder / 03</span><div class="office-shape"><i></i><b></b><em></em></div><span class="visual-caption">OFFICE</span></div>
+              <div class="equipment-info"><div><p class="equipment-type">categoria a confirmar</p><h3>Estação de impressão</h3></div><a class="circle-link" href="#contato" aria-label="Falar sobre estação de impressão">↗</a></div>
+            </article>
+          </div>
+          <p class="replacement-note"><span></span> Imagens, nomes, descrições, marcas e modelos são placeholders e devem ser substituídos após validação do cliente.</p>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="sobre" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div class="about-visual" role="img" aria-label="Imagem conceitual de folhas organizadas e um cartucho de toner"><span class="about-orbit about-orbit-one"></span><span class="about-orbit about-orbit-two"></span><div class="about-paper about-paper-one">IT</div><div class="about-paper about-paper-two"><span>atender</span><span>entender</span><span>resolver</span></div><div class="about-cartridge"><i></i><b>BK</b></div><span class="about-caption">imagem conceitual / não é foto da empresa</span></div>
+          <div class="about-copy" data-reveal="slide"><p class="section-kicker">sobre a imagi toner</p><h2 id="about-title">Experiência que começa no atendimento.</h2><p>Há uma coisa que não muda: entender o que o cliente realmente precisa. A Imagi Toner atua com soluções em impressão, oferecendo equipamentos, locação e assistência para ajudar empresas a manter sua rotina funcionando.</p><a class="text-link text-link-dark" href="#contato">Conversar sobre a sua rotina <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="cta-ring cta-ring-one" aria-hidden="true"></div><div class="cta-ring cta-ring-two" aria-hidden="true"></div>
+        <div class="container cta-inner"><p class="section-kicker section-kicker-light">vamos resolver</p><h2 id="cta-title">Precisa imprimir melhor<span class="title-dot">?</span></h2><p>Converse com a Imagi Toner e encontre a solução ideal para sua empresa.</p><div class="cta-actions"><a class="button button-coral" href="#contato">Solicitar orçamento <span aria-hidden="true">↗</span></a><a class="button button-outline-light" href="https://wa.me/558130990465" target="_blank" rel="noreferrer">Falar pelo WhatsApp <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+
+      <section class="contact-section section-pad" id="contato" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-intro" data-reveal="slide"><p class="section-kicker">contato</p><h2 id="contact-title">Vamos colocar sua impressão em ordem.</h2><p>Preencha os campos e conte um pouco sobre o que você precisa. Este formulário é demonstrativo nesta versão do protótipo.</p><div class="contact-direct"><span class="direct-label">fale diretamente</span><a href="tel:+558130990465">(81) 3099-0465</a><small>número da fachada — confirmar antes da publicação</small></div></div>
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="form-row"><div class="field"><label for="name">Nome <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required /></div><div class="field"><label for="company">Empresa</label><input id="company" name="company" type="text" autocomplete="organization" placeholder="Nome da empresa" /></div></div>
+            <div class="form-row"><div class="field"><label for="phone">Telefone <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required /></div><div class="field"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" required /></div></div>
+            <div class="field"><label for="help">Como podemos ajudar? <span aria-hidden="true">*</span></label><select id="help" name="help" required><option value="" selected disabled>Selecione uma opção</option><option>Quero comprar uma impressora</option><option>Tenho interesse em locação</option><option>Preciso de assistência</option><option>Preciso de suprimentos</option><option>Outro</option></select></div>
+            <div class="field"><label for="message">Conte um pouco mais</label><textarea id="message" name="message" rows="4" placeholder="Descreva sua necessidade, volume ou equipamento atual."></textarea></div>
+            <div class="form-submit"><button class="button button-blue" type="submit">Enviar solicitação <span aria-hidden="true">↗</span></button><p class="form-note">Ao enviar, você verá uma confirmação local. O formulário ainda não possui backend.</p></div>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top"><a class="brand brand-footer" href="#inicio" aria-label="Voltar ao início — Imagi Toner"><img class="brand-mark" src="public/assets/logo.svg" alt="" width="42" height="42" /><span class="brand-lockup"><span class="brand-name">IMAGI TONER</span><span class="brand-note">wordmark provisório</span></span></a><p>Venda, locação e assistência<br />para manter sua rotina funcionando.</p><a class="footer-phone" href="tel:+558130990465">(81) 3099-0465 <small>confirmar</small></a></div>
+      <div class="container footer-bottom"><span>© <span data-year></span> Imagi Toner</span><span>protótipo institucional · conteúdo sujeito a confirmação</span><a href="#inicio">voltar ao topo ↑</a></div>
+    </footer>
+
     <script src="script.js" defer></script>
   </body>
 </html>
